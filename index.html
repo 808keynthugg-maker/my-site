@@ -1,201 +1,134 @@
-<! DOCTYPE html>
-‹html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-‹meta name="viewport"
-content="width=device-width, initial-scale=1.0"›
-‹title>Мой сайт</title>
-<link rel="stylesheet"
-href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой сайт</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<! — Шапка —>
-<header class="header">
-‹div class="container
-header__inner"›
-<a href="#"
-class="logo">Мой<span>Сайт</span></a>
-<nav class="nav" id="nav">
-<a href="#home"
-class="nav__link">Главная</a>
-‹a href="#about"
-class="nav__link"›Обо мне</a>
-<a href="#skills"
-class="nav__link">Навыки</a>
-<a href="#contact"
-class="nav__link">Контакты</a>
-</ nav>
-‹button class="theme-btn"
-id="themeBtn" title="Сменить тему">🌙
 
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Мой<span>Сайт</span></a>
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav__link">Главная</a>
+        <a href="#about" class="nav__link">Обо мне</a>
+        <a href="#skills" class="nav__link">Навыки</a>
+        <a href="#contact" class="nav__link">Контакты</a>
+      </nav>
+      <button class="theme-btn" id="themeBtn" title="Сменить тему">🌙</button>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-</ button>
-‹button class="burger"
-id="burger" aria-label="Меню">
-‹span></span>‹span></
-span><span></span>
-</button>
-</div>
-</header>
-<!—- Главный экран —›
-‹section class="hero" id="home"›
-‹div class="container hero__inner"›
-‹div class="hero__text"›
-<h1 class="hero__title">Привет,
-я ‹span class="accent"›Разработчик</
-span></h1>
-class="hero__subtitle"›Создаю сайты на
-HTML, CSS и JavaScript</p>
-‹a href="#contact"
-class="btn">Связаться со мной</а>
-</div>
-‹div class="hero__image">
-‹div class="hero_circle">&It;/
-&gt; </div>
-</div>
-</ div>
-</ section›
-<!—- Обо мне с вкладками —>
-‹section class="section" id="about"›
+  <!-- Главный экран -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1 class="hero__title">Привет, я <span class="accent">Разработчик</span></h1>
+        <p class="hero__subtitle">Создаю сайты на HTML, CSS и JavaScript</p>
+        <a href="#contact" class="btn">Связаться со мной</a>
+      </div>
+      <div class="hero__image">
+        <div class="hero__circle">&lt;/&gt;</div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Обо мне с вкладками -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title">Обо мне</h2>
 
-‹div class="container"›
-<h2 class="section__title">060
-мне</h2>
-‹div class="tabs">
-<div class="tab-buttons">
-‹button class="tab-btn
-active" data-tab="tab1">Kто я</button>
-‹button class="tab-btn" data-
-tab="tab2">Опыт</button>
-‹button class="tab-btn" data-
-tab="tab3">Хобби</button>
-</div>
-<div class="tab-content active"
-id="tab1">
-<р>Я начинающий веб-
-разработчик. Изучаю HTML, CSS и
-JavaScript.
-Люблю создавать красивые и
-удобные интерфейсы. </р>
-</ div>
-‹div class="tab-content"
-id="tab2">
-<р>Уже сделал несколько
-учебных проектов: лендинги, калькулятор, список задач и этот сайт-
-портфолио. </p>
-</div>
-<div class="tab-content"
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="tab1">Кто я</button>
+          <button class="tab-btn" data-tab="tab2">Опыт</button>
+          <button class="tab-btn" data-tab="tab3">Хобби</button>
+        </div>
 
+        <div class="tab-content active" id="tab1">
+          <p>Я начинающий веб-разработчик. Изучаю HTML, CSS и JavaScript.
+             Люблю создавать красивые и удобные интерфейсы.</p>
+        </div>
+        <div class="tab-content" id="tab2">
+          <p>Уже сделал несколько учебных проектов: лендинги, калькулятор,
+             список задач и этот сайт-портфолио.</p>
+        </div>
+        <div class="tab-content" id="tab3">
+          <p>В свободное время читаю книги, играю в шахматы и изучаю
+             новые технологии. Также люблю фотографировать.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
- id="tab3">
-<р>В свободное время читаю
-книги, играю в шахматы и изучаю
-новые технологии. Также
-люблю фотографировать.</р>
-</div>
-</div>
-</div>
-</ section›
-‹!— Навыки с прогресс-барами —›
-‹section class="section section—alt"
-id="skills"›
-‹div class="container"›
-<h2
-class="section__title">Навыки</h2>
-<div class="skills"›
-<div class="skill"›
-‹div
-class="skill__head"><span>HTML</
-span><span≥90%</span></div>
-‹div class="skill__bar"><div
-class="skill_ fill" data-width="90"><| div></div>
-</ div>
-<div class="skill"›
-‹div
-class="skill
-__head"><span>CSS</
-span><span>85%</span></div>
-‹div class="skill__bar"><div
-class="skill__fill" data-width="85">|
+  <!-- Навыки с прогресс-барами -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <h2 class="section__title">Навыки</h2>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill__head"><span>HTML</span><span>90%</span></div>
+          <div class="skill__bar"><div class="skill__fill" data-width="90"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill__head"><span>CSS</span><span>85%</span></div>
+          <div class="skill__bar"><div class="skill__fill" data-width="85"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill__head"><span>JavaScript</span><span>70%</span></div>
+          <div class="skill__bar"><div class="skill__fill" data-width="70"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill__head"><span>Git</span><span>60%</span></div>
+          <div class="skill__bar"><div class="skill__fill" data-width="60"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-div></div>
-</ div>
-<div class="skill"›
-‹div
-class="skill
-__head"><span>JavaScript</
-span><span>70%</span></div>
-‹div class="skill__bar"›<div
-class="skill__fill" data-width="70">| div></div>
-</div>
-‹div class="skill"›
-‹div
-class="skill__head"><span>Git<| span><span≥60%</span></div>
-‹div class="skill__bar"><div
-class="skill__fill" data-width="60">‹| div></div>
-</ div>
-</div>
-</div>
-</ section›
-<!— Контакты с валидацией формы —›
-‹section class="section"
-id="contact"›
-‹div class="container"›
-<h2
-class="section__title">Контакты</h2>
-‹form class="form"
-id="contactForm" novalidate>
-‹div class="form__group">
+  <!-- Контакты с валидацией формы -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section__title">Контакты</h2>
+      <form class="form" id="contactForm" novalidate>
+        <div class="form__group">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Ваше имя">
 
+<span class="form__error" data-error="name"></span>
+        </div>
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <span class="form__error" data-error="email"></span>
+        </div>
+        <div class="form__group">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="4" placeholder="Текст сообщения"></textarea>
+          <span class="form__error" data-error="message"></span>
+        </div>
+        <button type="submit" class="btn">Отправить</button>
+        <p class="form__success" id="formSuccess">✅ Сообщение отправлено!</p>
+      </form>
+    </div>
+  </section>
 
-<label for="name">Имя</label>
-‹input type="text" id="name"
-name="name" placeholder="Ваше имя"›
-‹span class="form__error"
-data-error="name"></span>
-</div>
-<div class="form__group"›
-<label for="email">Email</
-label>
-‹input type="email"
-id="email" name="email"
-placeholder="you@example.com">
-‹span class="form__error"
-data-error="email"></span›
-</div>
-‹div class="form__group">
-<label
-for="message">Сообщение</label>
-‹textarea id="message"
-name="message" rows="4"
-placeholder="Текст сообщения"></
-textarea>
-‹span class="form__error"
-data-error="message"></span›
-</div>
-‹button type="submit"
-class="btn">0тправить</button>
-<p class="form_success"
-id="formSuccess">
-Сообщение
-отправлено!</р>
-</ form>
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 МойСайт. Сделано с ❤️ на HTML, CSS и JS.</p>
+    </div>
+  </footer>
 
-</div>
-</ section›
-<! — Подвал —>
-‹footer class="footer">
-<div class="container"›
-<p>• 2026 МойСайт. Сделано с
-на HTML, CSS n JS. </p>
-</div>
-</ footer>
-<!— Кнопка наверх —>
-‹button class="to-top" id="toTop"
-title="HaBepx">↑</button>
-‹script src="script.js"›<|script>
-</body> </html>
+  <!-- Кнопка наверх -->
+  <button class="to-top" id="toTop" title="Наверх">↑</button>
 
-
-
+  <script src="script.js"></script>
+</body>
+</html>
